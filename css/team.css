@@ -1,3 +1,6 @@
+
+@import "general.css"
+
 .card {
     height: 50vh;
 }
@@ -9,3 +12,4 @@ a {
 #team {
     height: 47vh;
 }
+
