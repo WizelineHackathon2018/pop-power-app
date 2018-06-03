@@ -55,8 +55,9 @@ dbRefMembers.on('child_added', (snap) => {
             </div>
         </div>
     </div>
-</section>`);
+    </section>`);
     $("#team").append(spanId);
 
     console.log(spanId);
 });
+// filtro por usuario
