@@ -23,7 +23,10 @@ firebase.initializeApp(config);
 const addedMembers =()=>{ 
     const dbRefMembers = firebase.database().ref().child("Members");
     dbRefMembers.on('child_added', (snap) => {
-        console.log(snap.val().Id);
+        console.log(snap.val().Duties.forEach(element => {
+            console.log($(`<li>${element}</li>`));
+            //$("#listDuties").append((`<li>${element}</li>`)
+        }));
         const spanId = $(`<section class="section col s4">
         <div class="card" id="${snap.val().Id}">
             <div class="card-image waves-effect waves-block waves-light activator">
@@ -42,7 +45,6 @@ const addedMembers =()=>{
                     <div class="col s12">
                         <div class="col s6">
                             <p class="e8f5e9 green lighten-5"> Contact </p>
-
                             <br>
                             <a href="#">${snap.val().Contact.Email}</a>
                             <br>
@@ -50,9 +52,9 @@ const addedMembers =()=>{
                         </div>
                         <div class="col s6">
                             <span class="e8f5e9 green lighten-5"> Duties </span>
-                            <br>
-
+                            <ul id="listDuties-${snap.val().Id}"></ul>
                             <span class="e8f5e9 green lighten-5"> Projects </span>
+                            <ul id="listProjects-${snap.val().Id}"></ul>
                         </div>
                     </div>
                 </div>
@@ -60,7 +62,20 @@ const addedMembers =()=>{
         </div>
     </section>`);
         $("#team").append(spanId);
-
+        snap.val().Duties.forEach(element => {
+            console.log($(`<li>${element}</li>`));
+            $(`#listDuties-${snap.val().Id}`).append(`<li>${element}</li>`)
+            })
+        snap.val().Projects.forEach(element => {
+            console.log($(`<li>${element}</li>`));
+            $(`#listProjects-${snap.val().Id}`).append(`<li>${element}</li>`)
+            })
+        /*
+        for( let i = 0; i < snap.val().Duties.length; i++) {
+            const newLi = $(`<li><a href="/user/messages"><span class="tab">${snap.val().Duties[i]}</span></a></li>`)
+                $("#listDuties").append(newLi);
+            };
+            */
         console.log(spanId);
     });
 };
