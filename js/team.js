@@ -6,3 +6,6 @@ const postQuestion = (e)=>{
 
 }
 $("#question-form").on("submit",postQuestion);
+$( "document" ).ready(()=>{
+    M.textareaAutoResize($('#team-questions'));
+});
