@@ -39,7 +39,7 @@ const addedMembers =()=>{
     <span class="card-title activator grey-text text-darken-4">${snap.val().Name}<i class="material-icons right">more_vert</i></span>
                 <p>${snap.val().Position}</p>
                 <p>${snap.val().Location}</p>
-                <p><a href="${snap.val().Contact.urlSlack}">${snap.val().Contact.Slack}</a></p>
+                <p><a href="${snap.val().Contact.urlSlack}" target="_blank">${snap.val().Contact.Slack}</a></p>
             </div>
             <div class="card-reveal">
                 <img src="${snap.val()["Profile picture"]}">
