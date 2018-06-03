@@ -20,44 +20,49 @@ storageBucket: "poppower-8c0ef.appspot.com",
 messagingSenderId: "901998159862"
 };
 firebase.initializeApp(config);
-const dbRefMembers = firebase.database().ref().child("Members");
-dbRefMembers.on('child_added', (snap) => {
-    console.log(snap.val().Id);
-    const spanId = $(`<section class="section col s4">
-    <div class="card" id="${snap.val().Id}">
-        <div class="card-image waves-effect waves-block waves-light activator">
-            <img class="activator" src="${snap.val()["Profile picture"]}">
-        </div>
-        <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">_Name_<i class="material-icons right">more_vert</i></span>
-            <p>_Position_</p>
-            <p><a href="#">${snap.val().Contact.Slack}</a></p>
-        </div>
-        <div class="card-reveal">
-            <img src="ejemplo.jpg">
-            <span class="card-title grey-text text-darken">_Name_<i class="material-icons right">close</i></span>
-            <div>
-                <div class="col s12">
-                    <div class="col s6">
-                        <span class="e8f5e9 green lighten-5">Contact</span>
-                        <br>
-                        <a href="https://outlook.live.com">_Contact_Email_</a>
-                        <br>
-                        <a href="https://slack.com/intl/es">_Contact_Slack_</a>
-                    </div>
-                    <div class="col s6">
-                        <span class="e8f5e9 green lighten-5"> Responsabilities </span>
-                        <br>
+const addedMembers =()=>{ 
+    const dbRefMembers = firebase.database().ref().child("Members");
+    dbRefMembers.on('child_added', (snap) => {
+        console.log(snap.val().Id);
+        const spanId = $(`<section class="section col s4">
+        <div class="card" id="${snap.val().Id}">
+            <div class="card-image waves-effect waves-block waves-light activator">
+                <img class="activator" src="${snap.val()["Profile picture"]}">
+            </div>
+            <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">${snap.val().Name}<i class="material-icons right">more_vert</i></span>
+                <p>${snap.val().Position}</p>
+                <p>${snap.val().Location}</p>
+                <p><a href="${snap.val().Contact.urlSlack}">${snap.val().Contact.Slack}</a></p>
+            </div>
+            <div class="card-reveal">
+                <img src="${snap.val()["Profile picture"]}">
+                <span class="card-title grey-text text-darken">${snap.val().Name}<i class="material-icons right">close</i></span>
+                <div>
+                    <div class="col s12">
+                        <div class="col s6">
+                            <p class="e8f5e9 green lighten-5"> Contact </p>
 
-                        <span class="e8f5e9 green lighten-5"> Projects </span>
+                            <br>
+                            <a href="#">${snap.val().Contact.Email}</a>
+                            <br>
+                            <a href="${snap.val().urlSlack}">${snap.val().Contact.Slack}</a>
+                        </div>
+                        <div class="col s6">
+                            <span class="e8f5e9 green lighten-5"> Duties </span>
+                            <br>
+
+                            <span class="e8f5e9 green lighten-5"> Projects </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>`);
-    $("#team").append(spanId);
+        $("#team").append(spanId);
 
-    console.log(spanId);
-});
-// filtro por usuario
+        console.log(spanId);
+    });
+};
+
+addedMembers();
