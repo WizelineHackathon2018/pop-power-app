@@ -1,0 +1,21 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'Lato', sans-serif;
+    color: #0F1626;
+}
+
+a {
+    color: #FF533D;
+}
+
+a > i {
+    font-size: 2em;
+}
+
+/* ********** PROYECTS ********** */
+.carousel > img {
+    border: 0;
+    height: auto;
+    padding: 0;
+    width: 350px;
+}
