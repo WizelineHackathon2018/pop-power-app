@@ -84,8 +84,6 @@ const addedMembers =()=>{
 };
 
 addedMembers();
-
-
 // GUARDANDO LOS COMENTARIOS
 var firebaseIdeasRef = firebase.database().ref().child('Projcts').child('uno').child('question'); //sirve para snapshot
 // se ejecuta primero la API de farebase poniendo en este orden
@@ -128,7 +126,3 @@ function addIdea(idea, id) {
     })
 
 }
-
-
-// nuevo integrante
-
