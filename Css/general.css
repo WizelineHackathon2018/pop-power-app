@@ -7,3 +7,8 @@ body {
 a {
     color: #FF533D;
 }
+
+#logo {
+    width: 150px;
+    height: 150px; 
+}
