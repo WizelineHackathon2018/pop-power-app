@@ -1,1 +1,5 @@
-@import "general.css"
+/* @import "general.css" */
+
+#login-page{
+    margin-left: 30%;
+}
