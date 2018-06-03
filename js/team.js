@@ -29,9 +29,10 @@ dbRefMembers.on('child_added', (snap) => {
             <img class="activator" src="${snap.val()["Profile picture"]}">
         </div>
         <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">_Name_<i class="material-icons right">more_vert</i></span>
-            <p>_Position_</p>
-            <p><a href="#">${snap.val().Contact.Slack}</a></p>
+<span class="card-title activator grey-text text-darken-4">${snap.val().Name}<i class="material-icons right">more_vert</i></span>
+            <p>${snap.val().Position}</p>
+            <p>${snap.val().Location}</p>
+            <p><a href="${snap.val().urlSlack}">${snap.val().Contact.Slack}</a></p>
         </div>
         <div class="card-reveal">
             <img src="ejemplo.jpg">
@@ -39,14 +40,15 @@ dbRefMembers.on('child_added', (snap) => {
             <div>
                 <div class="col s12">
                     <div class="col s6">
-                        <span class="e8f5e9 green lighten-5">Contact</span>
+                        <p class="e8f5e9 green lighten-5"> Contact </p>
+
                         <br>
-                        <a href="https://outlook.live.com">_Contact_Email_</a>
+                        <a href="#">${snap.val().Contact.Email}</a>
                         <br>
-                        <a href="https://slack.com/intl/es">_Contact_Slack_</a>
+                        <a href="${snap.val().urlSlack}">${snap.val().Contact.Slack}</a>
                     </div>
                     <div class="col s6">
-                        <span class="e8f5e9 green lighten-5"> Responsabilities </span>
+                        <span class="e8f5e9 green lighten-5"> Duties </span>
                         <br>
 
                         <span class="e8f5e9 green lighten-5"> Projects </span>
