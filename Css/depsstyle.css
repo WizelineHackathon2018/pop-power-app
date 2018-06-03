@@ -1,0 +1,40 @@
+#headercollection {
+    background-color: #0F1626 !important;
+    height: 25vh;
+    width: 30%;
+    padding-left: 28vh;
+}
+
+.nav-extended {
+    background-color: #FF533D !important;
+
+}
+.nav-content {
+    height: 15vh;
+    margin: 0;
+}
+
+#colorletter {
+    color: white !important;
+}
+
+.card-image {
+    height: 70vh;
+}
+
+.collection {
+    margin: 0;
+    height:
+}
+
+span.nav-title {
+    font-size: 2em;
+    text-align:
+}
+img.circle{
+    height: 20vh !important;
+    width: 20vh !important;
+}
+.title{
+    font-size: 1.3em !important;
+}
