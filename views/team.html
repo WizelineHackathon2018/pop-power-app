@@ -12,13 +12,35 @@
 </head>
 
 <body>
-    <h1 class="center-align col s8">.pop(Power)</h1>
+    <div class="col s6">
+        <h1><img id="logo" src="../assets/images/hackaton logofinished .png" alt="logo">pop(Power)</h1>
+    </div>
     <!-- End Page Loading -->
     <div class="container-fluid">
         <h2 id="area-title">Proyecto</h2>
+
         <nav>
-            <div><a class="right" href="sass.html"><i class="material-icons">search</i></a></div>
+            <div>
+                <a href="form.html" class="waves-effect waves-light btn-small" id='new-member'>Add New Member ( + )</a>
         </nav>
+
+        <!-- <nav>
+            <div><a class="right" href="sass.html"></a><i class="material-icons">search</i></a></div>
+        </nav> -->
+        <div class="row">
+            <form class="col s12" id="search-form">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="input-field inline col s8">
+                            <i class="material-icons prefix ">search</i>
+                            <input id="search-user-input" type="text">
+                            <label for="search-user-input">are you searching a team member?</label>
+                        </div>                
+                    </div>
+                </div>
+            </form>
+        </div>
+
         <main class="container">
             <section class="row">
                 <section id="manager" class="section col s4">
@@ -42,7 +64,7 @@
                                         <p class="e8f5e9 green lighten-5">Contact</p>
                                         <a href="https://outlook.live.com">Mail</a>
                                         <br>
-                                        <a href="https://slack.com/intl/es">Slack</a>
+                                        <a href="https://claseslaboratoria.slack.com/team/U480T292N">Slack</a>
                                     </div>
                                     <br>
                                     <div>
@@ -57,7 +79,9 @@
                 </section>
 
                 <section id="team">
+
                     <h5> Team </h5>
+
                 </section>
 
                 <section class="section col s4">
@@ -71,11 +95,11 @@
                                 <button class="btn waves-effect waves-light btn-small col s5" id="submit-button">
                                     Post Question
                                     <i class="material-icons">send</i>
-                                </button>  
+                                </button>
                             </div>
                         </form>
                     </div>
-                    <div class="row">
+                    <div class="row" id="ideas">
                         <section id="team-questions" class="col s12 collection"></section>
                     </div>
                 </section>
@@ -86,6 +110,7 @@
     <script src="../js/assets/materialize.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
     <script src="../js/team.js"></script>
+    <script src="../js/form.js"></script>
 </body>
 
 </html>

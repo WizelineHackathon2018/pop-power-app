@@ -12,6 +12,14 @@ a {
     height: 47vh;
 }
 
+
+#new-member{
+    margin-left: 80%;
+    background-color: red !important;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 div {
     align-items: center;
     justify-content: center;
@@ -20,5 +28,9 @@ div {
 
 div.card-reveal {
     padding: 0;
+}
 
-
+#logo {
+    width: 30px;
+    height: 30px; 
+}
