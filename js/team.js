@@ -43,17 +43,16 @@ const addedMembers =()=>{
                 <span class="card-title grey-text text-darken">${snap.val().Name}<i class="material-icons right">close</i></span>
                 <div>
                     <div class="col s12">
-                        <div class="col s6">
+                        <div>
                             <p class="e8f5e9 green lighten-5"> Contact </p>
-                            <br>
                             <a href="#">${snap.val().Contact.Email}</a>
-                            <br>
                             <a href="${snap.val().urlSlack}">${snap.val().Contact.Slack}</a>
                         </div>
-                        <div class="col s6">
-                            <span class="e8f5e9 green lighten-5"> Duties </span>
+                        <br>
+                        <div>
+                            <p class="e8f5e9 green lighten-5"> Duties </p>
                             <ul id="listDuties-${snap.val().Id}"></ul>
-                            <span class="e8f5e9 green lighten-5"> Projects </span>
+                            <p class="e8f5e9 green lighten-5"> Projects </p>
                             <ul id="listProjects-${snap.val().Id}"></ul>
                         </div>
                     </div>
