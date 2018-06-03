@@ -1,1 +1,15 @@
+
 @import "general.css"
+
+.card {
+    height: 50vh;
+}
+
+a {
+    text-align: none;
+}
+
+#team {
+    height: 47vh;
+}
+
