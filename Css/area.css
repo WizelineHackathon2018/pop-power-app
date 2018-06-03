@@ -1,0 +1,22 @@
+@import "general.css"
+
+a > i {
+    font-size: 2em;
+}
+
+.row {
+    background-color: #AB987A;
+    color: white;
+}
+
+.row > a { 
+    margin-top: 1.5em;
+}
+
+/* ********** PROYECTS ********** */
+.carousel > img {
+    border: 0;
+    height: auto;
+    padding: 0;
+    width: 350px;
+}
