@@ -174,16 +174,16 @@
                         <form class="col s12" id="question-form">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea class="materialize-textarea" id="question" type="text" placeholder="question to the team" ></textarea>
+                                    <textarea class="materialize-textarea" id="question" type="text" placeholder="question to the team"></textarea>
                                 </div>
                                 <button class="btn waves-effect waves-light btn-small col s5" id="submit-button">
                                     Post Question
                                     <i class="material-icons">send</i>
-                                </button>  
+                                </button>
                             </div>
                         </form>
                     </div>
-                    <div class="row">
+                    <div class="row" id="ideas">
                         <section id="team-questions" class="col s12 collection"></section>
                     </div>
                 </section>
@@ -193,6 +193,7 @@
     <script src="../js/assets/jquery.min.js"></script>
     <script src="../js/assets/materialize.min.js"></script>
     <script src="../js/team.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 </body>
 
 </html>
