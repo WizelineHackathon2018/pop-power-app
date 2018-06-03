@@ -1,15 +1,16 @@
-body {
-    background-color: #F5F5F5;
-    font-family: 'Lato', sans-serif;
-    color: #0F1626;
-}
-
-a {
-    color: #FF533D;
-}
+@import "general.css"
 
 a > i {
     font-size: 2em;
+}
+
+.row {
+    background-color: #AB987A;
+    color: white;
+}
+
+.row > a { 
+    margin-top: 1.5em;
 }
 
 /* ********** PROYECTS ********** */
