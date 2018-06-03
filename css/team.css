@@ -24,7 +24,10 @@ div {
     align-items: center;
     justify-content: center;
     padding: none;
-    
+}
+
+div.card-reveal {
+    padding: 0;
 }
 
 <<<<<<< HEAD
