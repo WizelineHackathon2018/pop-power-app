@@ -13,6 +13,14 @@ a {
     height: 47vh;
 }
 
+
+#new-member{
+    margin-left: 80%;
+    background-color: red !important;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 div {
     align-items: center;
     justify-content: center;
@@ -20,7 +28,10 @@ div {
     
 }
 
+<<<<<<< HEAD
 #logo {
     width: 30px;
     height: 30px; 
 }
+=======
+>>>>>>> 885943d62b8b8c8b62e0e6abf202b84e50998371
