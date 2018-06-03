@@ -22,5 +22,8 @@ messagingSenderId: "901998159862"
 firebase.initializeApp(config);
 const dbRefMembers = firebase.database().ref().child("Members");
 dbRefMembers.on('child_added', (snap) => {
-    console.log(snap.val());
+    console.log(snap.val().Id);
+    const spanId = $(`<p>${snap.val().Id}</p>`);
+    $("#team").append(spanId);
+    console.log(spanId);
 });
