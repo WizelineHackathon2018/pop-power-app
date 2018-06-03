@@ -1,4 +1,3 @@
-
 @import "general.css"
 
 .card {
@@ -13,9 +12,18 @@ a {
     height: 47vh;
 }
 
+
+#new-member{
+    margin-left: 80%;
+    background-color: red !important;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 div {
     align-items: center;
     justify-content: center;
     padding: none;
     
 }
+

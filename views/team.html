@@ -16,6 +16,12 @@
     <!-- End Page Loading -->
     <div class="container-fluid">
         <h2 id="area-title">Proyecto</h2>
+
+        <nav>
+            <div>
+                <a href="form.html" class="waves-effect waves-light btn-small" id='new-member'>Add New Member ( + )</a>
+        </nav>
+
         <!-- <nav>
             <div><a class="right" href="sass.html"></a><i class="material-icons">search</i></a></div>
         </nav> -->
@@ -32,6 +38,7 @@
                 </div>
             </form>
         </div>
+
         <main class="container">
             <section class="row">
                 <section class="section col s4">
@@ -70,7 +77,9 @@
                 </section>
 
                 <section id="team">
+
                     <h5> Team </h5>
+
                 </section>
 
                 <section class="section col s4">
@@ -80,16 +89,16 @@
                         <form class="col s12" id="question-form">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea class="materialize-textarea" id="question" type="text" placeholder="question to the team" ></textarea>
+                                    <textarea class="materialize-textarea" id="question" type="text" placeholder="question to the team"></textarea>
                                 </div>
                                 <button class="btn waves-effect waves-light btn-small col s5" id="submit-button">
                                     Post Question
                                     <i class="material-icons">send</i>
-                                </button>  
+                                </button>
                             </div>
                         </form>
                     </div>
-                    <div class="row">
+                    <div class="row" id="ideas">
                         <section id="team-questions" class="col s12 collection"></section>
                     </div>
                 </section>
