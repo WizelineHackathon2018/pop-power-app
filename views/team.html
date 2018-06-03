@@ -13,7 +13,7 @@
 
 <body>
     <div class="container-fluid">
-        <h2 id="area-title">__Area_Name__</h2>
+        <h2 id="area-title">Proyecto</h2>
         <main class="container">
             <section class="row">
                 <section class="section col s4">
@@ -52,13 +52,30 @@
                 </section>
                 <section class="section col s4">
                     <h5>Do your question here</h5>
-                    <p>Stuff</p>
-                </section>
+
+                    <div class="row">
+                        <form class="col s12" id="question-form">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input placeholder="question to the team" id="question" type="text" class="validate">
+                                </div>
+                                <button class="btn waves-effect waves-light" id="submit-button">
+                                    Submit
+                                    <i class="material-icons right">send</i>
+                                </button>                                    
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <section id="team-questions" class="col s12 collection"></section>
+                    </div>
+                </section>                        
             </section>
         </main>
     </div>
     <script src="../js/assets/jquery.min.js"></script>
-    <script src="../js/assets/materialize.min.js"></script>
+    <script src="../js/assets/materialize.min.js"></script>  
+    <script src="../js/team.js"></script>
 </body>
 
 </html>
