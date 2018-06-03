@@ -1,0 +1,13 @@
+
+.nav-extended {
+    background-color: #FF533D !important;
+
+}
+.nav-content {
+    height: 15vh !important;
+    margin: 0;
+}
+
+#main{
+    padding-left: 25em;
+}
